@@ -8,45 +8,361 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet"> 
     </head>
 <body>
-     <header class="header">
-        <div class="header-flex container">
-            <div class="header-left">
-                <a href="index.html" class="logo"><img class="logoimg" src="img/logo.jpg" alt="logo1">BRAN<span class="logo-letter">D</span></a>
-                <form action="#" class="header-form">
-                    <div class="browse">
-                        <a href="#" class="browse-header">
-                            <details>
-                                <summary>Browse</summary>
-                            </details>
-                        </a>
-                    </div>
-                    <input class="header-search" type="text" value="Search for Item">
-                    <button class="searchbuttonheader" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-            <div class="header-right">
-                <a href="#" class="cart"><img src="img/Forma_1.svg" alt="cart"></a>
-                <div class="myaccount">
-                    <details2 class="myaccountsummary">
-                        <summary2 class="myaccountsummary">My Account</summary2>
-                    </details2>
+<div class="header">
+    <div class="container header-flex">
+        <div class="header-left">
+            <a href="index.html" class="logo"><img class="logoimg" src="img/logo.jpg" alt="logo1">BRAN<span class="logo-letter">D</span></a>
+            <form action="#" class="header-form">
+                <div class="browse">
+                    <a href="#" class="browse-header">
+                        <details>
+                            <summary>Browse</summary>
+                        </details></a>
+                    <nav class="browse-dropdown">
+                        <h3 class="browse-dropdown-h3">Women</h3>
+                        <ul class="browse-dropdown-list">
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Dresses</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Tops</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Sweaters/Knits</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Jackets/Coats</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Blazers</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Denim</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Leggings/Pants</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Skirts/Shorts</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Accessories</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Bags/Purses</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Swimwear/Underwear</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Nightwear</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Shoes</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Beauty</a></li>
+                        </ul>
+                        <h3 class="browse-dropdown-h3">Men</h3>
+                        <ul class="browse-dropdown-list">
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Tees/Tank tops</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Shirts/Polos</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Sweaters</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Sweatshirts/Hoodies</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Blazers</a></li>
+                            <li class="browse-dropdown-element"><a href="#" class="browse-dropdown-link">Jackets/vests</a></li>
+                        </ul>
+                    </nav>
+
+
                 </div>
+                <input class="header-search" type="text" value="Search for Item">
+                <button class="searchbuttonheader" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="header-right">
+            <a href="#" class="cart"><img src="img/Forma_1.svg" alt="cart"></a>
+            <div class="myaccount">
+                <details2 class="myaccountsummary">
+                    <summary2 class="myaccountsummary">My Account</summary2>
+                </details2>
             </div>
         </div>
-    </header>
-    <nav class="nav">
-        <div class="container">
-            <ul class="menu">
-                <li class="menu-list"><a href="#" class="menu-link">Home</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Man</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Women</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Kids</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Accoseriese</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Featured</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Hot Deals</a></li>
-            </ul>
-        </div>
-    </nav>   
+    </div>
+</div>
+<nav class="nav">
+    <div class="container">
+        <ul class="menu">
+            <li class="menu-list"><a href="#" class="menu-link">Home</a>
+                <div class="mega-menu-drop">
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Blazers</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Denim</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Leggings/Pants</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Skirts/Shorts</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <a href="" class="mega-drop-supersale"><img src="img/mega-drop-supersale2.jpg" alt="30% mega sale" class="mega-drop-supersale-img"></a>
+                    </div>
+                </div></li>
+            <li class="menu-list"><a href="#" class="menu-link">Man</a>
+                <div class="mega-menu-drop">
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Blazers</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Denim</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Leggings/Pants</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Skirts/Shorts</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <a href="" class="mega-drop-supersale"><img src="img/mega-drop-supersale2.jpg" alt="30% mega sale" class="mega-drop-supersale-img"></a>
+                    </div>
+                </div></li>
+            <li class="menu-list"><a href="#" class="menu-link">Women</a>
+                <div class="mega-menu-drop">
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Blazers</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Denim</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Leggings/Pants</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Skirts/Shorts</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <a href="" class="mega-drop-supersale"><img src="img/mega-drop-supersale2.jpg" alt="30% mega sale" class="mega-drop-supersale-img"></a>
+                    </div>
+                </div></li>
+            <li class="menu-list"><a href="#" class="menu-link">Kids</a>
+                <div class="mega-menu-drop">
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Blazers</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Denim</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Leggings/Pants</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Skirts/Shorts</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <a href="" class="mega-drop-supersale"><img src="img/mega-drop-supersale2.jpg" alt="30% mega sale" class="mega-drop-supersale-img"></a>
+                    </div>
+                </div></li>
+            <li class="menu-list"><a href="#" class="menu-link">Accoseriese</a>
+                <div class="mega-menu-drop mega-menu-drop-right">
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Blazers</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Denim</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Leggings/Pants</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Skirts/Shorts</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <a href="" class="mega-drop-supersale"><img src="img/mega-drop-supersale2.jpg" alt="30% mega sale" class="mega-drop-supersale-img"></a>
+                    </div>
+                </div></li>
+            <li class="menu-list"><a href="#" class="menu-link">Featured</a>
+                <div class="mega-menu-drop mega-menu-drop-right">
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Blazers</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Denim</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Leggings/Pants</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Skirts/Shorts</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <a href="" class="mega-drop-supersale"><img src="img/mega-drop-supersale2.jpg" alt="30% mega sale" class="mega-drop-supersale-img"></a>
+                    </div>
+                </div></li>
+            <li class="menu-list"><a href="#" class="menu-link">Hot Deals</a>
+                <div class="mega-menu-drop mega-menu-drop-right">
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Blazers</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Denim</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Leggings/Pants</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Skirts/Shorts</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega-menu-drop-flex">
+                        <h3 class="mega-menu-drop-h3">Women</h3>
+                        <ul class="mega-menu-drop-list">
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Dresses</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Tops</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Sweaters/Knits</a></li>
+                            <li class="mega-menu-drop-item"><a href="#" class="mega-menu-drop-link">Jackets/Coats</a></li>
+                        </ul>
+                        <a href="" class="mega-drop-supersale"><img src="img/mega-drop-supersale2.jpg" alt="30% mega sale" class="mega-drop-supersale-img"></a>
+                    </div>
+                </div></li>
+        </ul>
+    </div>
+</nav>
     <section class="new-arrivals-header">
        <div class="new-arrivals-content container">
          <h3 class="new-arrivals-h3">New Arrivals </h3>
@@ -312,9 +628,8 @@
              
          </section>
      </section>
-     <section class="container promo-block3">
-       
-            <div class="promo-block-products promo-block-products2">
+     <section class="promo-block3">
+     <div class="container promo-block3-flex">
                 <article class="promo-bonuses promo-bonuses2"> <img src="img/delievery-icon.svg" alt="delievery" class="promo-bonuses-icon promo-bonuses-icon2">
                     <h3 class="promo-bonuses-h3 promo-bonuses-h3-2">Free Delivery</h3>
                     <p class="promo-bonuses-p promo-bonuses-p-2">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
@@ -328,10 +643,11 @@
                     <p class="promo-bonuses-p promo-bonuses-p-2">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </article>
             </div>
-     
-    </section>
-    <section class="subscribe-block container">
+     </section>
+    <section class="subscribe-block">
         <div class="subscribe-block-overlay"> </div>
+        <div class="container">
+
         <div class="subscribe-block-content-layer">
             <figure class="quote">
                 <div class="figure-container"> <img src="img/author-photo.png" alt="author" class="quote-img">
@@ -362,6 +678,7 @@
                         <input class="e-mail-submit-button" type="submit" value="Submit"> </div>
                 </form>
             </div>
+        </div>
         </div>
     </section>
     <section class="about-us-contacts container">
