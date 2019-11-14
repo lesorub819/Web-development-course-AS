@@ -1374,4 +1374,286 @@ body
     justify-content: space-around
     height: 340px
     margin-top: 100px
+.shopping-cart-block
+  padding: 65px 0px
+  &__h3
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    &_bold-labels
+      font-weight: 700
+    &_padding-top
+      padding-top: 10px
+  &__label
+    display: flex
+    color: #575757
+    font-weight: 400
+    font-size: 13px
+    line-height: 20px
+  &__p
+    display: flex
+    color: #6f6e6e
+    font-size: 13px
+    font-weight: 300
+    padding-left: 5px
+  &__rating
+    display: flex
+    padding: 8px 0px
+    &_color
+      color: #e4af48
+      font-size: 13px
+  &__img
+    margin-right: 15px
+  &__price-box
+    display: flex
+    justify-content: center
+    align-items: center
+    width:  150px
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+  &__quantity-box
+    display: flex
+    justify-content: center
+    align-items: center
+    width:  150px
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+  &__quantity
+    width: 54px
+    height: 30px
+    text-align: center
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    border: 1px solid #eaeaea
+    &:focus
+      border-color: #f16d7f
+      outline: none
+    &::-webkit-inner-spin-button, &__quantity::-webkit-outer-spin-button
+      -webkit-appearance: none
+      margin: 0
+  &__shipping-box
+    display: flex
+    justify-content: center
+    align-items: center
+    width:  150px
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+  &__subtotal-box
+    display: flex
+    justify-content: center
+    align-items: center
+    width:  150px
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+  &__action-box
+    display: flex
+    justify-content: center
+    align-items: center
+    width:  150px
+    font-size: 13px
+    font-weight: 400
+  &__action
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #c0c0c0
+    width: 15px
+    height: 15px
+    border: none
+    border-radius: 50%
+    &:hover
+      background-color: #f16d7f
+      cursor: pointer
+    &_color
+      display: flex
+      align-items: center
+      justify-content: center
+      color: white
+      font-size: 13px
+      font-weight: 400
+      text-align: center
 
+  &__element
+    display: flex
+    justify-content: space-between
+    padding: 25px 0px
+    border-bottom: 1px solid #eaeaea
+    align-items: center
+    &_left-part
+      display: flex
+      justify-content: left
+    &_right-part
+      display: flex
+      width: 650px
+      justify-content: space-between
+    &_flex-vertical
+      display: flex
+      flex-direction: column
+  &__button
+    width: 235px
+    height: 50px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    text-align: center
+    line-height: 50px
+    margin-top: 45px
+    &_right
+      float: right
+      width: 225px
+
+.order-section
+  display: flex
+  justify-content: space-between
+  margin-bottom: 79px
+  &__block
+    display: flex
+    flex-direction: column
+    &_right
+      background-color: #f5f3f3
+      padding: 43px
+      height: 124px
+  &__subtotal, &__total
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+  &__total
+    padding: 12px 0 23px 0
+    border-bottom: 1px solid #e2e2e2
+  &__input
+    border: 1px solid #eaeaea
+    color: #b1b1b1
+    width: 315px
+    height: 45px
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    padding: 0 15px
+    margin-top: 20px
+    &::-webkit-input-placeholder
+      color: #b1b1b1
+    &::-moz-placeholder
+      color: #b1b1b1
+    &:-moz-placeholder
+      color: #b1b1b1
+    &:-ms-input-placeholder
+      color: #b1b1b1
+    &_select
+      width: 347px
+      color: #b1b1b1
+      font-size: 13px
+      font-weight: 300
+      padding-left: 12px
+  &__label
+    display: flex
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+  &__p
+    color: #000000
+    font-size: 14px
+    font-weight: 300
+    margin-top: 25px
+    margin-bottom: 3px
+    &_subtotal
+      display: flex
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      padding: 0 0
+      margin: 0 0 0 15px
+    &_total
+      display: flex
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      color: #f16d7f
+      padding: 0 0
+      margin: 0 0 0 15px
+  &__button
+    padding: 0 15px
+    height: 35px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    width: fit-content
+    margin-top: 25px
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+  &__h3
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+.shopping-cart-block__button_order
+  margin-top: 17px
+  background-color: #f16d7f
+  color: #ffffff
+
+.carousel-inner
+  width: 600px !important
+  height: 724px !important
+.container-flex
+  display: flex
+  justify-content: center
+.slide
+  position: relative !important
+  background-color: #f7f7f7 !important
+  border: 1px solid #eaeaea !important
+  padding-top: 10px !important
+  padding-bottom: 60px !important
+.carousel-control-next-icon, .carousel-control-prev-icon
+  background-image: none !important
+  background-color: rgba(43, 36, 49, 0.48) !important
+  width: 47px !important
+  height: 47px !important
+  display: flex !important
+  align-items: center !important
+  justify-content: center !important
+.slider-angles
+  color: #ffffff
+  font-size: 24px
+  font-weight: 100
+.carousel-indicators
+  opacity: 0.99 !important
+  z-index: 1000 !important
+.indicators-overflow
+  z-index: 1000
+.carousel-indicators .active
+  background-color: #f16d7f !important
+  width: 60px !important
+.carousel-indicators> li
+  position: relative !important
+  opacity: 0.99 !important
+  z-index: 1000 !important
+  display: flex !important
+  justify-content: center !important
+  align-items: center !important
+  background-clip: border-box !important
+  width: 45px !important
+  height: 3px !important
+  margin: 0 0 !important
+  border: 1px solid #eaeaea !important
+  background-color: white !important
+
+
+.pre-order-section
+  display: flex
+  position: relative
+  border: 1px solid #eaeaea
+  margin-top: -70px
+  height: 730px
+  z-index: 50
+  background-color: white
