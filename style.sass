@@ -9,7 +9,6 @@
   height: 100px
 
 
-
 .container
   width: 1140px
   margin: 0 auto
@@ -18,7 +17,6 @@
   display: flex
   height: 38px
   margin-left: 37px
-
 
 
 .header-left
@@ -37,6 +35,7 @@
   background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%)
   justify-content: center
   width: 87px
+
 .browse-dropdown
   background-color: #fff
   border-radius: 5px
@@ -44,14 +43,16 @@
   position: absolute
   top: 30px
   left: -5px
-  flex-direction:  column
+  flex-direction: column
   display: none
   padding: 7px 13px
 
   &-element:hover
     background-color: #f16d7f
+
   &-list
-      list-style-type: none
+    list-style-type: none
+
   &-h3
     line-height: 32px
     border-bottom: 1px solid #e8e8e8
@@ -60,8 +61,10 @@
     font-weight: 400
     text-transform: uppercase
     letter-spacing: 0.35px
+
   &-h3:last-of-type
     margin-top: 7px
+
   &-link
     display: block
     padding: 4px 5px
@@ -70,11 +73,17 @@
     font-size: 14px
     font-weight: 400
     letter-spacing: 0.35px
+
 .browse:hover .browse-dropdown
   display: flex
   z-index: 1
+
 .menu-list
   position: relative
+  &:hover .menu-link
+    transform: translateY(-5px)
+    transition: 0.5s
+
 .mega-menu-drop
   display: none
   border: 1px solid #e8e8e8
@@ -85,6 +94,8 @@
   top: 50px
   padding: 20px
   z-index: 1
+  opacity: 0
+
 
   &::after
     content: ''
@@ -98,9 +109,11 @@
     transform: rotate(45deg)
     border-left: 1px solid #e8e8e8
     border-top: 1px solid #e8e8e8
+
   &-right
     left: auto
     right: -200px
+
     &::after
       left: auto
       right: 250px
@@ -110,8 +123,10 @@
     flex-direction: column
     margin-right: 46px
     position: relative
+
     &:last-of-type
       margin-right: 0px
+
   &-h3
     line-height: 32px
     width: 235px
@@ -121,10 +136,13 @@
     font-weight: 400
     text-transform: uppercase
     letter-spacing: 0.35px
+
     &:nth-of-type(2)
       margin-top: 15px
+
   &-list
     list-style-type: none
+
   &-link
     display: block
     padding: 4px 5px
@@ -133,21 +151,19 @@
     font-size: 14px
     font-weight: 400
     letter-spacing: 0.35px
+
     &:hover
       color: #f16d7f
-
 
 
 .mega-drop-supersale
   margin-left: -20px
 
 
-
 .header-right
   display: flex
   justify-content: flex-end
   align-items: center
-
 
 
 summary
@@ -195,16 +211,20 @@ details2[open] > summary2::after
 .logo
   display: flex
   align-items: center
-  color: #222222
+  color: #222222 !important
   font-size: 27px
   font-weight: 300
   text-transform: uppercase
   letter-spacing: 0.68px
-  text-decoration: none
+  text-decoration: none !important
 
 
 .logoimg
   margin-right: 13px
+.logo:hover .logoimg
+  transform: scale(1.1) rotateY(1080deg)
+  transition-timing-function: cubic-bezier(.19,.95,1,.59)
+  transition-duration: 3s
 
 
 .myaccount
@@ -221,10 +241,12 @@ details2[open] > summary2::after
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.17)
   border: 1px solid #ececec
   background-color: #ffffff
+  width: 100%
 
 
 .nav
   display: flex
+
 .menu
   list-style-type: none
   display: flex
@@ -332,7 +354,6 @@ body
   flex-direction: column
 
 
-
 .promo-block-top
   display: flex
   width: 560px
@@ -344,11 +365,9 @@ body
   width: 560px
 
 
-
 .promo-block-bottom-left
   background-color: #dadad2
   height: 261px
-
 
 
 .promo-block-element
@@ -383,7 +402,6 @@ body
   font-weight: 900
 
 
-
 .promo-block-element-bottom
   margin-top: 20px
 
@@ -393,7 +411,6 @@ body
   flex-direction: column
   margin-top: 100px
   justify-content: center
-
 
 
 .featuredh2
@@ -424,7 +441,6 @@ body
 
 .featured-items-table
   display: flex
-
 
 
 .featured-item
@@ -470,8 +486,6 @@ body
   position: absolute
 
 
-
-
 .feautered-item-overlay
   justify-content: center
   position: absolute
@@ -479,17 +493,15 @@ body
   display: none
 
 
-
-
 .featured-item:hover .feautered-item-overlay
   display: block
 
   transition: 3s
+
 .featured-item:hover
   transform: scale(1.1)
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
   transition: all 0.5s
-
 
 
 .overlay-top
@@ -499,7 +511,6 @@ body
   height: 280px
   background-color: #3a3838
   opacity: 0.8
-
 
 
 .addtocart-button
@@ -539,11 +550,17 @@ body
   font-weight: 700
   letter-spacing: 0.4px
 
-
+.buttons-effect
+  outline: none
 .buttons-effect:hover
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
-  transition: 0.1s
+  transition: 0.25s
   transform: scale(1.02)
+  outline: none
+.buttons-effect:active
+  transition-property: transform
+  transition-duration: 0.2s
+  transform: scale(0.99)
 
 
 .button-explore-all
@@ -551,7 +568,6 @@ body
   justify-content: center
   margin-top: 40px
   margin-bottom: 15px
-
 
 
 .promo-block2
@@ -572,13 +588,11 @@ body
     padding: 50px 36px
 
 
-
 .promo-block2-left
 
   background-image: url(img/30%discountbackroundtotal.jpg)
   width: 767px
   height: 529px
-
 
 
 .promo-block2-lefth3
@@ -598,7 +612,6 @@ body
   letter-spacing: 1.5px
   padding-left: 40px
   padding-top: 146px
-
 
 
 .promo-bonuses-h3
@@ -624,7 +637,6 @@ body
 
 
 .promo-bonuses
-
 
 
 .promo-block-2-link
@@ -655,7 +667,6 @@ body
   font-size: 16px
   font-weight: 700
   letter-spacing: 0.4px
-
 
 
 .qoute-location
@@ -696,7 +707,6 @@ body
 .slider-icon
 
 
-
 .slider-quote-a
   display: flex
 
@@ -708,7 +718,6 @@ body
 
 
 .slider-quote-a-active
-
 
 
 .subscribe-block-overlay
@@ -759,7 +768,6 @@ body
   line-height: 18px
 
 
-
 .e-mail-form
   display: flex
   width: 300px
@@ -801,7 +809,6 @@ body
 .e-mail-submit-button:hover
   background-color: crimson
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.45)
-
 
 
 .subscribe-form
@@ -849,14 +856,12 @@ body
 .nav-bottom-link
   display: block
   padding: 8px 5px 8px 5px
-  text-decoration: none
-  color: #898989
+  text-decoration: none !important
+  color: #898989 !important
   font-size: 16px
   font-weight: 400
   letter-spacing: 0.4px
   width: 100%
-
-
 
 
 .nav-bottom-list
@@ -885,8 +890,6 @@ body
   margin-bottom: 90px
 
 
-
-
 .footer
   background-color: #e6e6e6
 
@@ -911,8 +914,7 @@ body
   align-items: center
   width: 32px
   height: 32px
-  text-decoration: none
-
+  text-decoration: none !important
 
 
 .social-links-list
@@ -951,6 +953,8 @@ body
 
 
 .menu-list:hover .mega-menu-drop
+  transition: 2s
+  opacity: 1
   display: flex
 
 
@@ -965,8 +969,6 @@ body
   height: 148px
 
 
-
-
 .new-arrivals-content
   display: flex
   justify-content: space-between
@@ -975,14 +977,10 @@ body
   height: 148px
 
 
-
 .new
 
 
-
 .new-arrivals-header1
-
-
 
 
 .new-arrivals-h3
@@ -1014,7 +1012,6 @@ body
   height: 148px
 
 
-
 .separator
   display: block
   padding: 3px 0px
@@ -1032,6 +1029,7 @@ body
   font-size: 14px
   font-weight: 400
   text-decoration: none
+
   &:hover
     color: #f16d7f
 
@@ -1051,7 +1049,6 @@ body
   border-left: solid 4px #ef5b70
   border-bottom: 1px solid #ebebeb
   margin-bottom: 15px
-
 
 
 .products-sidebar-summary:hover
@@ -1081,7 +1078,6 @@ body
 .products-sidebar-details
 
 
-
 .products-sidebar-details-block
   padding-left: 7px
 
@@ -1106,6 +1102,7 @@ body
   color: #6f6e6e
   font-size: 14px
   font-weight: 400
+
   &:hover
     color: #f16d7f
 
@@ -1127,7 +1124,6 @@ body
 .trending-filter-links-subblock:first-child
 
 
-
 .filter-block
   display: flex
   justify-content: space-between
@@ -1137,7 +1133,6 @@ body
   width: 848px
   display: flex
   flex-direction: column
-
 
 
 .filter-checkbox-label
@@ -1151,7 +1146,6 @@ body
   cursor: pointer
   margin-right: 23px
   padding: 2px 0
-
 
 
 .product-size-filter-checkboxes-block
@@ -1256,7 +1250,6 @@ body
   padding: 0 5px
 
 
-
 .sorting-block-show-products-per-page-summary::after
   content: '\25BC'
 
@@ -1287,7 +1280,6 @@ body
   text-transform: uppercase
 
 
-
 .products-pagination-block
   display: flex
   align-items: center
@@ -1297,7 +1289,6 @@ body
   justify-content: center
   border: 1px solid #ebebeb
   background-color: #ffffff
-
 
 
 .products-pagination-link
@@ -1379,58 +1370,73 @@ body
 
   background-color: #222224
   margin-bottom: 0
+
   &-flex
     display: flex
     justify-content: space-around
     height: 340px
     margin-top: 100px
+
 .shopping-cart-block
   padding: 65px 0px
+
   &__h3
     color: #222222
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
+
     &_bold-labels
       font-weight: 700
+
     &_padding-top
       padding-top: 10px
+
   &__label
     display: flex
     color: #575757
     font-weight: 400
     font-size: 13px
     line-height: 20px
+
   &__p
     display: flex
     color: #6f6e6e
     font-size: 13px
     font-weight: 300
     padding-left: 5px
+  &__a
+    text-decoration: none
+    color: #222222
   &__rating
     display: flex
     padding: 8px 0px
+
     &_color
       color: #e4af48
       font-size: 13px
+
   &__img
     margin-right: 15px
+
   &__price-box
     display: flex
     justify-content: center
     align-items: center
-    width:  150px
+    width: 150px
     color: #656565
     font-size: 13px
     font-weight: 400
+
   &__quantity-box
     display: flex
     justify-content: center
     align-items: center
-    width:  150px
+    width: 150px
     color: #656565
     font-size: 13px
     font-weight: 400
+
   &__quantity
     width: 54px
     height: 30px
@@ -1439,35 +1445,41 @@ body
     font-size: 13px
     font-weight: 400
     border: 1px solid #eaeaea
+
     &:focus
       border-color: #f16d7f
       outline: none
+
     &::-webkit-inner-spin-button, &__quantity::-webkit-outer-spin-button
       -webkit-appearance: none
       margin: 0
+
   &__shipping-box
     display: flex
     justify-content: center
     align-items: center
-    width:  150px
+    width: 150px
     color: #656565
     font-size: 13px
     font-weight: 400
+
   &__subtotal-box
     display: flex
     justify-content: center
     align-items: center
-    width:  150px
+    width: 150px
     color: #656565
     font-size: 13px
     font-weight: 400
+
   &__action-box
     display: flex
     justify-content: center
     align-items: center
-    width:  150px
+    width: 150px
     font-size: 13px
     font-weight: 400
+
   &__action
     display: flex
     justify-content: center
@@ -1477,9 +1489,11 @@ body
     height: 15px
     border: none
     border-radius: 50%
+
     &:hover
       background-color: #f16d7f
       cursor: pointer
+
     &_color
       display: flex
       align-items: center
@@ -1495,16 +1509,20 @@ body
     padding: 25px 0px
     border-bottom: 1px solid #eaeaea
     align-items: center
+
     &_left-part
       display: flex
       justify-content: left
+
     &_right-part
       display: flex
       width: 650px
       justify-content: space-between
+
     &_flex-vertical
       display: flex
       flex-direction: column
+
   &__button
     width: 235px
     height: 50px
@@ -1517,6 +1535,7 @@ body
     text-align: center
     line-height: 50px
     margin-top: 45px
+
     &_right
       float: right
       width: 225px
@@ -1525,20 +1544,25 @@ body
   display: flex
   justify-content: space-between
   margin-bottom: 79px
+
   &__block
     display: flex
     flex-direction: column
+
     &_right
       background-color: #f5f3f3
       padding: 43px
       height: 124px
+
   &__subtotal, &__total
     display: flex
     flex-direction: row
     justify-content: flex-end
+
   &__total
     padding: 12px 0 23px 0
     border-bottom: 1px solid #e2e2e2
+
   &__input
     border: 1px solid #eaeaea
     color: #b1b1b1
@@ -1549,32 +1573,40 @@ body
     font-weight: 300
     padding: 0 15px
     margin-top: 20px
+
     &::-webkit-input-placeholder
       color: #b1b1b1
+
     &::-moz-placeholder
       color: #b1b1b1
+
     &:-moz-placeholder
       color: #b1b1b1
+
     &:-ms-input-placeholder
       color: #b1b1b1
+
     &_select
       width: 347px
       color: #b1b1b1
       font-size: 13px
       font-weight: 300
       padding-left: 12px
+
   &__label
     display: flex
     color: #4a4a4a
     font-size: 11px
     font-weight: 400
     text-transform: uppercase
+
   &__p
     color: #000000
     font-size: 14px
     font-weight: 300
     margin-top: 25px
     margin-bottom: 3px
+
     &_subtotal
       display: flex
       color: #4a4a4a
@@ -1583,6 +1615,7 @@ body
       text-transform: uppercase
       padding: 0 0
       margin: 0 0 0 15px
+
     &_total
       display: flex
       font-size: 16px
@@ -1591,6 +1624,7 @@ body
       color: #f16d7f
       padding: 0 0
       margin: 0 0 0 15px
+
   &__button
     padding: 0 15px
     height: 35px
@@ -1602,11 +1636,13 @@ body
     font-size: 11px
     font-weight: 700
     text-transform: uppercase
+
   &__h3
     color: #222222
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
+
 .shopping-cart-block__button_order
   margin-top: 17px
   background-color: #f16d7f
@@ -1615,15 +1651,18 @@ body
 .carousel-inner
   width: 600px !important
   height: 724px !important
+
 .container-flex
   display: flex
   justify-content: center
+
 .slide
   position: relative !important
   background-color: #f7f7f7 !important
   border: 1px solid #eaeaea !important
   padding-top: 10px !important
   padding-bottom: 60px !important
+
 .carousel-control-next-icon, .carousel-control-prev-icon
   background-image: none !important
   background-color: rgba(43, 36, 49, 0.48) !important
@@ -1632,21 +1671,26 @@ body
   display: flex !important
   align-items: center !important
   justify-content: center !important
+
 .slider-angles
   color: #ffffff
   font-size: 24px
   font-weight: 100
+
 .carousel-indicators
   position: absolute
   bottom: -50px
   opacity: 0.99 !important
   z-index: 1000 !important
+
 .indicators-overflow
   z-index: 1000
+
 .carousel-indicators .active
   background-color: #f16d7f !important
   width: 60px !important
-.carousel-indicators> li
+
+.carousel-indicators > li
   position: relative !important
   opacity: 0.99 !important
   z-index: 1000 !important
@@ -1671,6 +1715,7 @@ body
   z-index: 50
   background-color: white
   padding: 70px 250px 120px 250px
+
   &__topbox
     text-align: center
     flex-direction: column
@@ -1678,6 +1723,7 @@ body
     justify-content: center
     align-items: center
     border-bottom: 1px solid #eaeaea
+
   &__bottombox
     padding: 63px 53px 0px 53px
     display: flex
@@ -1685,6 +1731,7 @@ body
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
+
   &__h4
     color: #f16d7f
     font-size: 14px
@@ -1692,39 +1739,46 @@ body
     text-transform: uppercase
     margin-bottom: 0px
     line-height: 16px
+
     &_product-options
       margin-left: 3px
       color: #2f2f2f
+
   &__h2
     color: #4d4d4d
     font-size: 18px
     font-weight: 400
     text-transform: uppercase
     margin-top: 32px
+
   &__p
     color: #5e5e5e
     font-size: 14px
     font-weight: 300
     margin-top: 60px
+
   &__h1
     color: #ef5b70
     font-size: 24px
     font-weight: 700
     margin-top: 37px
     margin-bottom: 45px
+
   &__form
     display: flex
     justify-content: center
 
   &__input
-    width: 144px!important
+    width: 144px !important
     display: block
     margin: 0 0
     margin-top: 7px
     height: 35px
+
     &_without-arrow::-webkit-inner-spin-button, &_without-arrow::-webkit-outer-spin-button
       -webkit-appearance: none
       margin: 0
+
   &__label
     display: flex
     width: fit-content
@@ -1735,12 +1789,14 @@ body
     text-transform: uppercase
     align-items: center
     margin: 0 20px
+
     &_bottom
       margin: 0 0
       display: flex
       flex-direction: column
       align-items: flex-start
       color: #2f2f2f
+
   &__button
     display: flex
     width: 100%
@@ -1759,14 +1815,17 @@ body
   width: 20px
   height: 20px
   background-color: red
+
 .products-block-box
   display: flex
   justify-content: space-between
   padding: 0px 0px 0px 0px !important
   margin: 0 0 !important
+
 .products-block
   padding: 0 0 !important
   margin-bottom: 70px
+
   &__h1
     color: #4d4d4d
     font-size: 24px
@@ -1775,3 +1834,94 @@ body
     margin-top: 115px
     margin-bottom: 20px
     text-align: center
+
+.checkout
+  &__content
+    display: flex
+    justify-content: space-between
+    padding-left: 27px
+    padding-bottom: 80px
+  &__block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__subblock
+    display: flex
+    flex-direction: column
+    &_bottom
+      display: flex
+      flex-direction: row
+  &__label
+    color: #222222
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    &_radio
+      display: block
+      flex-direction: column
+  &__input
+    display: block
+    width: 390px
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    padding: 0 10px
+  &__a
+    text-decoration: none
+    color: #222222!important
+    font-size: 14px
+    font-weight: 400
+    margin-left: 50px
+  &__h3
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+  &__radio
+    color: #222222
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+    margin-right: 5px
+  &__p
+    color: #b3b2b2
+    font-size: 13px
+    font-weight: 400
+    margin-top: 12px
+    margin-bottom: 30px
+    &_without-margin-b
+      margin-bottom: 0px
+    &_without-margin-t
+      margin-top: 0px
+    &_red
+      color: #ff0d0d
+  &__button
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    width: 180px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+  &__details
+    border-bottom: 1px solid #e8e8e8
+
+
+  &__summary
+    display: flex
+    height: 72px
+
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    align-items: center
+    outline: none
+    &::after
+      content: ''
+  &__details[open]> .checkout__summary::after
+    content: ''
